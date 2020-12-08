@@ -21,5 +21,18 @@ namespace ShapesTests
 
             Assert.Equal(25, area);
         }
+
+        /// <summary>
+        /// Calculate the area of a Square.
+        /// </summary>
+        [Fact]
+        public void CalculateAreaWhenLengthIsThreeTest()
+        {
+            Square square = new Square(3);
+
+            int area = square.Area();
+
+            Assert.Equal(9, area);
+        }
     }
 }
