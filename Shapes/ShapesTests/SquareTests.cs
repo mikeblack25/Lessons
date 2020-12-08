@@ -12,27 +12,16 @@ namespace ShapesTests
         /// <summary>
         /// Calculate the area of a Square.
         /// </summary>
-        [Fact]
-        public void CalculateAreaTest()
+        /// <param name="length"></param>
+        /// <param name="expectedArea"></param>
+        [Theory]
+        [InlineData(5, 25)]
+        [InlineData(3, 9)]
+        public void CalculateAreaTest(int length, int expectedArea)
         {
-            Square square = new Square(5);
+            Square square = new Square(length);
 
-            int area = square.Area();
-
-            Assert.Equal(25, area);
-        }
-
-        /// <summary>
-        /// Calculate the area of a Square.
-        /// </summary>
-        [Fact]
-        public void CalculateAreaWhenLengthIsThreeTest()
-        {
-            Square square = new Square(3);
-
-            int area = square.Area();
-
-            Assert.Equal(9, area);
+            Assert.Equal(expectedArea, square.Area());
         }
     }
 }
