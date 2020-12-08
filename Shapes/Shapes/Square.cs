@@ -2,7 +2,7 @@
 
 namespace Shapes
 {
-    class Class1
+    class Square
     {
     }
 }
