@@ -1,3 +1,5 @@
+using Shapes;
+
 using Xunit;
 
 namespace ShapesTests
@@ -13,7 +15,11 @@ namespace ShapesTests
         [Fact]
         public void CalculateAreaTest()
         {
-            Assert.False(true);
+            Square square = new Square(5);
+
+            int area = square.Area();
+
+            Assert.Equal(25, area);
         }
     }
 }
