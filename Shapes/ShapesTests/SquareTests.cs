@@ -23,5 +23,33 @@ namespace ShapesTests
 
             Assert.Equal(expectedArea, square.Area());
         }
+
+        /// <summary>
+        /// Check the color of the shape.
+        /// </summary>
+        /// <param name="color"></param>
+        [Theory]
+        [InlineData(Color.Green)]
+        public void ColorTest(Color color)
+        {
+            Square squareColor = new Square(5, color: color);
+
+
+            Assert.Equal(Color.Green, squareColor.Color);
+        }
+
+        /// <summary>
+        /// Check the texture of the shape.
+        /// </summary>
+        /// <param name="texture"></param>
+        [Theory]
+        [InlineData(Texture.Bumpy)]
+        public void TextureTest(Texture texture)
+        {
+            Square squareTexture = new Square(5, texture: texture);
+
+
+            Assert.Equal(Texture.Bumpy, squareTexture.Texture);
+        }
     }
 }
