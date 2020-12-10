@@ -1,7 +1,7 @@
 ﻿namespace Shapes
 {
     /// <summary>
-    /// A Square is a shape that has 4 sides that are the same size.
+    /// A Square is a shape that has 4 sides that are the same size with a given color.
     /// </summary>
     public class SquareColor
     {
@@ -20,6 +20,9 @@
         public Color1 Color { get; set; } // Example of a property.
     }
 
+        /// <summary>
+        /// Color1 is an enumeration which represents a veriable for a given color.
+        /// </summary>
     public enum Color1
     {
         Blue = 1,

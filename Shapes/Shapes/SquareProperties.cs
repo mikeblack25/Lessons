@@ -1,12 +1,12 @@
 ﻿namespace Shapes
 {
     /// <summary>
-    /// A Square is a shape that has 4 sides that are the same size.
+    /// A Square is a shape that has 4 sides that are the same size aswell as its trxture and color.
     /// </summary>
     public class SquareProperties
     {
         /// <summary>
-        /// l * l
+        /// length is = to one side of the square.
         /// </summary>
         /// <param name="length"></param>
         public SquareProperties(int length) // Special type of method called a Constructor (same name as class).
@@ -15,7 +15,7 @@
         }
 
         /// <summary>
-        /// Color and Texture
+        /// Color and Texture of a square.
         /// </summary>
         /// <param name="color"></param>
         /// <param name="texture"></param>
@@ -42,6 +42,9 @@
             return Length * Length;
         }
     }
+        /// <summary>
+        /// Color2 is an enumeration representing a given color.
+        /// </summary>
     public enum Color2
     { Black = 1,
         Green,
@@ -49,7 +52,9 @@
         Red,
         Blue,
         Pink }
-
+    /// <summary>
+    /// Texture is an enumeration representing a given texture.
+    /// </summary>
     public enum Texture
     {
      Soft = 1,
