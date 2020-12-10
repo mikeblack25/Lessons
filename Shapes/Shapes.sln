@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "Shapes\Shapes.csproj", "{42392D07-5289-4AFA-8A4E-2A59D33D2149}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesTests", "ShapesTests\ShapesTests.csproj", "{16ABC63E-D586-4B1A-9C97-0AC998F30914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesTests", "ShapesTests\ShapesTests.csproj", "{16ABC63E-D586-4B1A-9C97-0AC998F30914}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
